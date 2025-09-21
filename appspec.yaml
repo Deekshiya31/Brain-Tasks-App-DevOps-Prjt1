@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::EKS::Service
+      Properties:
+        ClusterName: my-eks-cluster        # Replace with your EKS cluster name
+        Namespace: default                 # Kubernetes namespace
+        Name: my-app-service               # Kubernetes Service name
+
